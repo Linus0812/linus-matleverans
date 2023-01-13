@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesar Pizzeria</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Containern till översta menyn-->
+    <div class="flexbox-container-header">
+        <!--De olika meny alternativ-->
+        <a href="index.html" class="flexbox-item-header flexbox-item-index">
+            <div class="flexbox-item-header flexbox-item-index">
+                <img src="img/cesar.png" width="100%" height="100%">
+            </div>
+            </a>
+        <div class="flexbox-item-header flexbox-item-menu">
+            <h1><a href="menu.html">Menu</a></h1>
+        </div>
+        <div class="flexbox-item-header flexbox-item-contact">
+            <h1><a href="contact.html">Contact</a></h1>
+        </div>
+        <a href="myOrder.html" class="flexbox-item-header flexbox-item-myOrder">
+        <div class="flexbox-item-header flexbox-item-myOrder">
+            <div>
+                <div class="cart">
+                    <img src="img/shoppingCart.png" width="75px" height="75px">
+                </div>
+            </div>
+        </div>
+        </a>
+    </div>
+    <div class="flexbox-container-myOrder">
+        <div class="flexbox-item-myOrder-body">
+            <h1>Din beställning</h1>
+            <ol>
+                <li>Hawaii--120 kr</li>
+                <li>Itailia--125 kr</li>
+                <li>Kebab--110 kr</li>
+            </ol>
+        </div>
+        <div class="break"></div>
+        <div class="flexbox-item-myOrder-button">
+            <p id='demo' style='display: none'>Tack för din beställning!</p>     
+            <button type='button' class="block" onclick="toggleText()">Beställ</button>
+        </div>
+        <div class="flexbox-item-myOrder-img">
+            <img src="img/cesar2.jpg" alt="" width="500px">
+        </div>
+    </div>
+    <script>
+        function toggleText() {
+            var text = document.getElementById("demo");
+                if (text.style.display === "none") {
+                    text.style.display = "block";
+                } else {
+                    text.style.display = "none";
+                }
+            }
+    </script>
+</body>
+</html>
